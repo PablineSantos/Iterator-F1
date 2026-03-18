@@ -273,18 +273,6 @@ http://localhost:8080/
 
 ---
 
-## 📌 Possíveis Melhorias Futuras
-
-- Tratar melhor exceções de leitura de arquivo
-- Utilizar `getResourceAsStream()` em vez de caminho fixo do arquivo
-- Adicionar filtros por equipe, nacionalidade ou pontuação
-- Criar ordenações adicionais
-- Melhorar o layout das páginas
-- Implementar testes unitários
-- Mostrar diferenças práticas entre as estruturas escolhidas
-
----
-
 ## 👩‍💻 Autor
 
 **Pabline Pereira**
