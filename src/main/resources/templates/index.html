@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fórmula 1 - Iterator</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg,#1f1f1f,#3c3c3c);
+            color:white;
+            text-align:center;
+            padding-top:100px;
+        }
+
+        .box{
+            background:white;
+            color:black;
+            width:400px;
+            margin:auto;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.5);
+        }
+
+        h1{
+            margin-bottom:30px;
+        }
+
+        select{
+            padding:10px;
+            width:200px;
+            margin-top:10px;
+            border-radius:5px;
+        }
+
+        button{
+            margin-top:20px;
+            padding:10px 20px;
+            border:none;
+            background:#e10600;
+            color:white;
+            font-weight:bold;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#ff2a2a;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="box">
+
+    <h1>🏎️ Pilotos da Fórmula 1</h1>
+
+    <form action="/pilotos" method="get">
+
+        <label>Escolha a estrutura:</label>
+
+        <br><br>
+
+        <select name="estruturaSelecionada">
+
+            <option value="hashset">HashSet</option>
+            <option value="treeset">TreeSet</option>
+            <option value="arraydeque">ArrayDeque</option>
+            <option value="hashmap">HashMap</option>
+            <option value="stack">Stack</option>
+
+        </select>
+
+        <br>
+
+        <button type="submit">Exibir Grid</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
