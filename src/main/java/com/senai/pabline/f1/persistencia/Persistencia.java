@@ -15,7 +15,7 @@ public class Persistencia {
         this.nomeArquivo = nomeArquivo;
     }
 
-    public <Piloto> listagemDePilotosHashSet() {
+    public Iterator<Piloto> listagemDePilotosHashSet() {
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(nomeArquivo))) {
             HashSet<Piloto> conjuntoDePilotos = new HashSet<>();
             String linhaDoArquivo;

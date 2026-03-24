@@ -11,7 +11,7 @@ import java.util.Set;
 @Service
 public class PilotoService {
 
-    public Set<Piloto> listarPilotos(String tipoDeEstrutura) throws Exception {
+    public Iterator<Piloto> listarPilotos(String tipoDeEstrutura) throws Exception {
        Persistencia pilotoPersistencia = new Persistencia("src/main/resources/dados/DadosDosPilotosF1.csv");
 
         Iterator<Piloto> iteratorDePilotos;
@@ -37,13 +37,7 @@ public class PilotoService {
                 break;
         }
 
-        Set<Piloto> pilotosParaExibicao = new LinkedHashSet<>();
 
-        while (iteratorDePilotos.hasNext()) {
-            Piloto pilotoAtual = iteratorDePilotos.next();
-            pilotosParaExibicao.add(pilotoAtual);
-        }
-
-        return pilotosParaExibicao;
+        return iteratorDePilotos;
     }
 }
